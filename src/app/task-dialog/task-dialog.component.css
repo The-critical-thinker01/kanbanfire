@@ -1,0 +1,16 @@
+/* Lorsque vous faites glisser un élément, la fonction de glisser-déposer du CDK Angular le clone et l'insère à l'emplacement où nous allons déposer l'élément d'origine. Pour veiller à ce que cet élément ne soit pas visible, nous allons définir la propriété "opacity" dans la classe cdk-drag-placeholder, que le CDK ajoutera à l'espace réservé.
+
+De plus, lorsque nous supprimons un élément, le CDK ajoute la classe cdk-drag-animating. Pour afficher une animation fluide, nous définissons une transition avec une durée de 250ms au lieu d'ancrer l'élément.
+
+En outre, nous devons apporter quelques modifications mineures aux styles de nos tâches. Dans task.component.css, nous allons définir l'affichage de l'élément hôte sur block et définir des marges : */
+
+:host {
+    display: block;
+  }
+  
+  .item {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  

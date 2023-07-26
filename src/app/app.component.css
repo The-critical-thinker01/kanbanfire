@@ -1,0 +1,80 @@
+mat-toolbar {
+    margin-bottom: 20px;
+  }
+  
+  mat-toolbar > span {
+    margin-left: 10px;
+  }
+ mat-card{
+  display: flex;
+  justify-content: center;
+ }
+  .content-wrapper {
+    max-width: 1400px;
+    margin: auto;
+  }
+ 
+  .content-button{
+    padding: 2px 1px ;
+    margin-left: 10px;
+    background-color:green;
+    padding: 5px;
+    width: 10% ;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+
+  }
+  .content-button:hover{
+    background-color: yellow;
+
+  }
+  
+  .content-wrapper>div>button{
+    border-width: 5px solide black;
+    background-color: yellow;
+    border-radius: 10px;
+     width: 95%;
+  }
+  .content-wrapper>div>button:hover{
+    background-color: white;
+  }
+   
+  .container-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+ 
+  .container {
+    width: 400px;
+    margin: 0 25px 25px 0;
+  }
+  
+ 
+  .list {
+    border: solid 1px #ccc;
+    min-height: 60px;
+    border-radius: 4px;
+  }
+ 
+  app-new-task {
+    margin-bottom: 30px;
+  }
+   
+  .empty-label {
+    font-size: 2em;
+    padding-top: 10px;
+    text-align: center;
+    opacity: 0.2;
+  } 
+  /* Lorsque nous commençons à faire glisser la tâche "Buy milk" (Acheter du lait), deux fiches s'affichent pour la même tâche : celle que nous faisons glisser et celle de la zone. La CDK Angular fournit des noms de classes CSS que nous pouvons utiliser pour résoudre ce problème. */
+  
+ .cdk-drag-animating {
+    transition: transform 250ms;
+  }
+  
+  .cdk-drag-placeholder {
+    opacity: 0;
+  } 
+
+  
