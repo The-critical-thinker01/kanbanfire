@@ -16,7 +16,9 @@
     mat-fab
     color="accent"
     aria-label="Delete"
-    [mat-dialog-close]="{ task: data.task, delete: true }">
+    [mat-dialog-close]="{ task: data.task, delete: true }"
+    (click)="deleteTask(tasks.id)">
     <mat-icon>delete</mat-icon>
   </button>
   </div>
+<!--     [mat-dialog-close]="{ task: data.task, delete: true }" -->

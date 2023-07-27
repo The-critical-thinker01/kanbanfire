@@ -15,6 +15,25 @@ export class TaskDialogComponent {
     @Inject(MAT_DIALOG_DATA) public data: TaskDialogData
   ) {}
 
+  tasks:any=[];
+  refreshTask(){
+    this.tasks.getTask().subscribe((res:any)=>{
+      this.tasks=res;
+    })
+  }
+  ngOnInit(){
+    this.refreshTask();
+  }
+
+  deleteTask(id:string){
+        this.tasks.deleteTask(id).then((res:any)=>{
+          console.log(res);
+          this.refreshTask();
+        })
+  }
+
+
+
   cancel(): void {
     this.data.task.title = this.backupTask.title;
     this.data.task.description = this.backupTask.description;

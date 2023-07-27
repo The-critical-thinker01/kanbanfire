@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "kabanfire-6b5fa": {
+      "hosting": {
+        "kanban-fire": [
+          "kabanfire-6b5fa"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "kabanfire-6b5fa"
+  }
+}
